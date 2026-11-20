@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>연령별 추천 채널</title>
+<style>
+:root{--bg:#fff8ec;--card:#fff;--ink:#3b2f2f;--sub:#8a7a70;--accent:#ff8a5b;--chip:#ffe7c7;--shadow:0 4px 14px rgba(120,80,30,.12);--cell:#f0e4d2}
+@media (prefers-color-scheme:dark){:root{--bg:#1d1a17;--card:#2a2622;--ink:#f4ece4;--sub:#b3a69b;--chip:#3a332c;--shadow:0 4px 14px rgba(0,0,0,.4);--cell:#3a332c}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;padding-bottom:calc(24px + env(safe-area-inset-bottom))}
+header{padding:14px 16px 4px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+h1{margin:0;font-size:22px}
+.back{border:0;background:var(--chip);color:var(--ink);text-decoration:none;font-size:15px;padding:12px 16px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+.notes{margin:8px 16px 4px;padding:12px 14px;background:var(--card);border-radius:16px;box-shadow:var(--shadow);font-size:13px;line-height:1.55;color:var(--sub)}
+.notes p{margin:2px 0}.notes b{color:var(--ink)}
+h2.sec{margin:16px 16px 6px;font-size:14px;color:var(--sub);font-weight:600}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 16px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:0;background:var(--chip);color:var(--ink);font-size:15px;padding:8px 16px;border-radius:999px;min-height:44px;line-height:1.2;text-align:center}
+.chip small{display:block;font-size:11px;opacity:.75;font-weight:400}
+.chip.on{background:var(--accent);color:#fff;font-weight:700}
+#cnt{margin:14px 16px 2px;font-size:13px;color:var(--sub)}
+#list{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px;padding:8px 16px}
+.card{background:var(--card);border-radius:20px;box-shadow:var(--shadow);padding:14px;display:flex;flex-direction:column;gap:8px;border-top:6px solid var(--c)}
+.top{display:flex;gap:12px;align-items:center}
+.face{flex:none;width:56px;height:56px;border-radius:50%;background:var(--chip);display:flex;align-items:center;justify-content:center;font-size:30px}
+.nm{font-size:17px;font-weight:700;line-height:1.25}
+.badge{display:inline-block;margin-top:3px;font-size:12px;font-weight:600;color:#fff;background:var(--c);padding:2px 9px;border-radius:999px}
+.badge.dk{color:#3b2f2f}
+.new{margin-left:6px;font-size:11px;background:var(--chip);color:var(--ink);border-radius:999px;padding:2px 8px}
+.desc{font-size:13.5px;line-height:1.55;color:var(--ink);margin:0}
+.bar{display:grid;grid-template-columns:repeat(20,1fr);gap:2px}
+.bar i{height:8px;border-radius:2px;background:var(--cell)}
+.bar i.on{background:var(--c)}
+.bar i.cur{outline:2px solid var(--ink);outline-offset:1px}
+.ar{font-size:12px;color:var(--sub);display:flex;justify-content:space-between}
+.go{margin-top:auto;border:0;background:var(--accent);color:#fff;font-size:15px;font-weight:700;padding:12px;border-radius:14px;min-height:46px}
+.empty,.foot{text-align:center;color:var(--sub);padding:20px 16px;font-size:12.5px;line-height:1.6}
+.modal{position:fixed;inset:0;background:#000a;z-index:30;display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.box{background:var(--card);color:var(--ink);border-radius:22px;padding:22px;max-width:360px;width:100%;text-align:center}
+.box h2{margin:0 0 10px;font-size:20px}
+.box p{color:var(--sub);font-size:14px;margin:6px 0 14px}
+.box input{font-size:20px;padding:12px;border-radius:12px;border:2px solid var(--chip);background:var(--bg);color:var(--ink);width:100%;text-align:center;margin-bottom:12px}
+.box button{border:0;background:var(--accent);color:#fff;font-size:18px;padding:14px;border-radius:14px;width:100%;margin-top:4px}
+.box button.g{background:var(--chip);color:var(--ink)}
+</style>
+</head>
+<body>
+<header><h1>📚 연령별 추천 채널</h1><a class="back" href="index.html">← TV유치원</a></header>
+
+<div class="notes">
+  <p>⭐ 영상은 <b>만 2세(24개월) 이후</b>부터, <b>하루 1시간</b>을 넘기지 않는 것을 권장해요. <span>(WHO·미국소아과학회 가이드라인 참고)</span></p>
+  <p>🧭 연령은 대략적인 권장 시기예요. 아이가 즐겁게 본다면 조금 달라도 괜찮아요.</p>
+</div>
+
+<h2 class="sec">우리 아이 나이</h2>
+<div class="chips" id="age"></div>
+<h2 class="sec">유형</h2>
+<div class="chips" id="cat"></div>
+
+<div id="cnt"></div>
+<div id="list"></div>
+
+<div class="foot">
+  영어 채널 로드맵 출처: © 2026 롱테일 교육 연구소 (<a href="https://longtailway-astro.longtail-inc.workers.dev/english-roadmap/" target="_blank" rel="noopener" style="color:inherit">원문 보기</a>)<br>
+  '한국어' 유형(엄마까투리)은 이 앱에서 추가한 채널이에요.
+</div>
+
+<div class="modal" id="gate"><div class="box">
+  <h2>부모 확인</h2><p id="q"></p>
+  <input id="ans" type="number" inputmode="numeric" autocomplete="off">
+  <button id="gok">유튜브 열기</button><button class="g" id="gno">취소</button>
+</div></div>
+
+<script>
+const $=s=>document.querySelector(s);
+/* 막대 칸: 20칸 = 만2~6세 × 4분기. 만 N세 = 칸 (N-2)*4 ~ (N-2)*4+3 */
+const AGES=[{y:0,n:'전체',s:''},{y:2,n:'만 2세',s:'한국 3~4세'},{y:3,n:'만 3세',s:'한국 4~5세'},{y:4,n:'만 4세',s:'한국 5~6세'},{y:5,n:'만 5세',s:'한국 6~7세'},{y:6,n:'만 6세',s:'한국 7~8세'}];
+const CATS=[
+  {id:'ko',   e:'🇰🇷',n:'한국어',       c:'#d9534f',d:'우리말 이야기'},
+  {id:'song', e:'🎵',n:'노래형',       c:'#F4B183',d:'노래·율동·반복 표현',dk:1},
+  {id:'life', e:'💬',n:'생활 언어형',  c:'#E88C8B',d:'일상 표현·말 걸기',dk:1},
+  {id:'letter',e:'🔤',n:'문자 입문형', c:'#3B5BA5',d:'알파벳·파닉스'},
+  {id:'story',e:'🧸',n:'쉬운 스토리형',c:'#8E5BA6',d:'짧고 쉬운 이야기'},
+  {id:'know', e:'🎓',n:'지식 탐구형',  c:'#1F8A9B',d:'숫자·과학·미술 등'}
+];
+const CH=[
+ {cat:'ko',name:'엄마 까투리 (Katuri_KR)',emoji:'🐦',handle:'@Katuri_KR',start:0,end:19,mine:1,
+  desc:'한국어 애니메이션 「엄마 까투리」 공식 채널. 영어 영상 사이에 우리말 이야기 시간으로 넣어 주기 좋아요.'},
+ {cat:'song',name:'Super Simple Songs',emoji:'🎵',handle:'@SuperSimpleSongs',start:0,end:9,desc:'느린 템포와 반복적인 표현으로 쉽게 따라갈 수 있는 영어 동요 채널. 노래와 율동으로 영어 소리와 리듬에 익숙해지기 좋아요.'},
+ {cat:'song',name:'Danny Go!',emoji:'🕺',handle:'@DannyGo',start:4,end:15,desc:'춤과 움직임을 함께 따라 하는 댄스·무브먼트 송. 몸을 움직이며 동작 표현과 간단한 지시를 자연스럽게 접해요.'},
+ {cat:'life',name:'Ms. Rachel',emoji:'👩‍🏫',handle:'@msrachel',start:0,end:9,desc:'또박또박 천천히 말하고, 반복해서 질문하며 아이의 반응을 이끌어요. 첫 단어와 생활 표현을 접하기 좋아요.'},
+ {cat:'life',name:'Steve and Maggie',emoji:'🪄',handle:'@Steve_and_Maggie',start:6,end:13,desc:'스티브와 까치 매기가 펼치는 유쾌한 상황극. 생활 장면 속 쉬운 표현을 반복해서 들을 수 있어요.'},
+ {cat:'life',name:'Blippi',emoji:'🧢',handle:'@Blippi',start:6,end:15,desc:'박물관·농장·소방서 같은 실제 장소를 다니며 눈앞의 사물과 행동을 설명해요. 사물 이름부터 탈것·직업·장소까지 오래 활용할 수 있어요.'},
+ {cat:'story',name:"Carl's Car Wash",emoji:'🚗',handle:'@CarlsCarWash',start:4,end:9,desc:'다양한 탈것이 세차장에 찾아오는 단순하고 반복적인 이야기. 처음 스토리형을 접할 때 따라가기 쉬워요.'},
+ {cat:'story',name:'Pocoyo',emoji:'🔵',handle:'@pocoyoenglish',start:4,end:10,desc:'대사가 많지 않고 내레이터가 이야기를 이끌어요. 화면 속 행동이 분명해 영어가 아직 낯설어도 따라가기 쉬워요.'},
+ {cat:'story',name:'Sarah & Duck',emoji:'🦆',handle:'@SarahAndDuckOfficial',start:5,end:11,desc:'사라와 오리가 겪는 작고 엉뚱한 일상을 차분하게 그려요. 전개가 느리고 대화도 또렷해 편안해요.'},
+ {cat:'story',name:"Daniel Tiger's Neighborhood",emoji:'🐯',handle:'@DanielTigersNeighbourhood',start:7,end:13,desc:'가족·친구·감정·생활 습관을 다루는 일상 이야기. 중요한 표현을 노래와 반복으로 다시 들려줘요.'},
+ {cat:'story',name:'Caillou',emoji:'👦',handle:'@caillou',start:8,end:13,desc:'아이의 가족·친구·생활을 다루는 일상 이야기. 상황과 행동이 분명해 영어의 의미를 짐작하기 좋아요.'},
+ {cat:'story',name:'Peppa Pig',emoji:'🐷',handle:'@PeppaPigOfficial',start:8,end:15,desc:'가족과 친구들의 일상을 짧은 에피소드로 보여줘요. 내레이터가 장면을 설명해줘 화면과 뜻이 이어지기 쉬워요.'},
+ {cat:'story',name:'Hey Duggee',emoji:'🐶',handle:'@HeyDuggeeOfficial',start:9,end:15,desc:'다양한 활동에 도전하며 배지를 모으는 스쿼럴 클럽 이야기. 활동 어휘와 유머가 조금씩 늘어나요.'},
+ {cat:'story',name:"Ben & Holly's Little Kingdom",emoji:'🧚',handle:'@BenAndHollyOfficial',start:12,end:17,desc:'요정과 엘프가 사는 작은 왕국 이야기. 일상 대화에 판타지 어휘와 유머가 더해져 난이도가 조금 올라가요.'},
+ {cat:'story',name:'Curious George',emoji:'🐒',handle:'@CuriousGeorge',start:12,end:17,desc:'호기심 많은 조지가 새로운 일을 벌이고 해결해가는 이야기. 내레이션이 흐름을 설명해줘 따라가기 좋아요.'},
+ {cat:'story',name:'Bluey',emoji:'🐕',handle:'@BlueyOfficialChannel',start:16,end:19,desc:'가족의 일상과 상상 놀이를 자연스러운 대화로 풀어낸 애니메이션. 대화가 빠르고 구어 표현이 많아 난이도가 높아요.'},
+ {cat:'letter',name:'Super Simple ABCs',emoji:'🔤',handle:'@SuperSimpleABCs',start:6,end:11,desc:'노래와 애니메이션으로 알파벳의 이름·모양·소리를 익혀요. 문자 입문용 채널이에요.'},
+ {cat:'letter',name:'Jack Hartmann',emoji:'🎤',handle:'@JackHartmann',start:8,end:15,desc:'노래와 몸동작으로 알파벳 소리와 파닉스를 반복해요. 숫자·도형·운동 같은 학습 콘텐츠도 다뤄요.'},
+ {cat:'letter',name:'Alphablocks',emoji:'🅰️',handle:'@officialalphablocks',start:10,end:19,desc:'글자 캐릭터들이 만나 소리를 합치고 단어를 만들어요. 블렌딩 원리를 눈으로 확인하는 파닉스 애니메이션이에요.'},
+ {cat:'know',name:'Colourblocks',emoji:'🌈',handle:'@colourblocks',start:7,end:11,desc:'색깔 캐릭터들과 함께 색의 이름과 조합을 탐색해요. 영어로 색의 세계를 즐기기 좋아요.'},
+ {cat:'know',name:'Numberblocks',emoji:'🔢',handle:'@Numberblocks',start:8,end:15,desc:'숫자 캐릭터들이 합쳐지고 나뉘며 수의 원리를 보여줘요. 수량·덧셈·뺄셈을 영어와 함께 접해요.'},
+ {cat:'know',name:'Wonderblocks',emoji:'💡',handle:'@WonderblocksOfficial',start:11,end:17,desc:'캐릭터들이 문제를 해결하며 계획·순서·패턴·논리를 익혀요. 초기 코딩과 컴퓨팅 사고의 기초를 접해요.'},
+ {cat:'know',name:'Octonauts',emoji:'🐙',handle:'@Octonauts',start:12,end:17,desc:'바다 탐험대가 여러 생물을 만나고 구조하는 이야기. 동물·바다·자연 지식도 함께 접해요.'},
+ {cat:'know',name:'Art for Kids Hub',emoji:'🎨',handle:'@ArtforKidsHub',start:14,end:19,desc:'아빠와 아이가 함께 그림을 그리고 만드는 미술 채널. 영어 지시를 듣고 따라 하며 ‘듣고 행동하기’를 경험해요.'}
+];
+const store={get(k,d){try{return localStorage.getItem(k)??d}catch{return d}},set(k,v){try{localStorage.setItem(k,v)}catch{}}};
+let age=+store.get('rm_age',0),cat=store.get('rm_cat','all');
+const catOf=id=>CATS.find(c=>c.id===id);
+const span=(s,e)=>{const a=2+(s>>2),b=2+(e>>2);return a===b?`만 ${a}세`:`만 ${a}~${b}세`};
+const fits=ch=>!age||(ch.start<=(age-2)*4+3&&ch.end>=(age-2)*4);
+
+function chip(label,sub,on,fn){const b=document.createElement('button');b.className='chip'+(on?' on':'');b.innerHTML=label+(sub?`<small>${sub}</small>`:'');b.onclick=fn;return b}
+
+function render(){
+  const ac=$('#age');ac.innerHTML='';
+  AGES.forEach(a=>ac.appendChild(chip(a.n,a.s,a.y===age,()=>{age=a.y;store.set('rm_age',age);render()})));
+  const cc=$('#cat');cc.innerHTML='';
+  cc.appendChild(chip('전체','',cat==='all',()=>{cat='all';store.set('rm_cat',cat);render()}));
+  CATS.forEach(c=>cc.appendChild(chip(c.e+' '+c.n,c.d,cat===c.id,()=>{cat=c.id;store.set('rm_cat',cat);render()})));
+
+  const items=CH.filter(ch=>fits(ch)&&(cat==='all'||ch.cat===cat)).sort((a,b)=>a.start-b.start||a.end-b.end);
+  $('#cnt').textContent=`${items.length}개 채널`+(age?` · 만 ${age}세에 맞는 채널`:'');
+  const L=$('#list');L.innerHTML='';
+  if(!items.length){L.innerHTML='<div class="empty">이 조건에 맞는 채널이 없어요</div>';return}
+  for(const ch of items){
+    const k=catOf(ch.cat),d=document.createElement('div');d.className='card';d.style.setProperty('--c',k.c);
+    let cells='';for(let i=0;i<20;i++){const cur=age&&i>=(age-2)*4&&i<(age-2)*4+4;cells+=`<i class="${i>=ch.start&&i<=ch.end?'on':''}${cur?' cur':''}"></i>`}
+    d.innerHTML=`<div class="top"><div class="face"></div><div><div class="nm"></div><span class="badge${k.dk?' dk':''}">${k.e} ${k.n}</span></div></div>
+      <p class="desc"></p><div><div class="bar">${cells}</div><div class="ar"><span>만 2세</span><span>${span(ch.start,ch.end)}</span><span>만 6세</span></div></div>
+      <button class="go">▶ 유튜브에서 보기</button>`;
+    d.querySelector('.face').textContent=ch.emoji;
+    d.querySelector('.nm').textContent=ch.name;
+    if(ch.mine){const n=document.createElement('span');n.className='new';n.textContent='추가';d.querySelector('.nm').appendChild(n)}
+    d.querySelector('.desc').textContent=ch.desc;
+    d.querySelector('.go').onclick=()=>ask('https://www.youtube.com/'+ch.handle);
+    L.appendChild(d);
+  }
+}
+
+/* 부모 확인(곱셈) 후 유튜브 열기 — 아이가 마음대로 밖으로 나가지 못하게 */
+let ansv=0,target='';
+function ask(url){target=url;const a=3+Math.floor(Math.random()*7),b=4+Math.floor(Math.random()*6);ansv=a*b;$('#q').textContent=`${a} × ${b} = ?`;$('#ans').value='';$('#gate').classList.add('open');$('#ans').focus()}
+$('#gno').onclick=()=>$('#gate').classList.remove('open');
+$('#gok').onclick=()=>{if(+$('#ans').value===ansv){$('#gate').classList.remove('open');window.open(target,'_blank','noopener')}else{$('#ans').value='';$('#ans').focus()}};
+$('#ans').addEventListener('keydown',e=>{if(e.key==='Enter')$('#gok').click()});
+render();
+</script>
+</body>
+</html>

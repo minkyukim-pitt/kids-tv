@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>아기 TV유치원</title>
+<style>
+:root{--bg:#fff8ec;--card:#fff;--ink:#3b2f2f;--sub:#8a7a70;--accent:#ff8a5b;--chip:#ffe7c7;--shadow:0 4px 14px rgba(120,80,30,.12)}
+@media (prefers-color-scheme:dark){:root{--bg:#1d1a17;--card:#2a2622;--ink:#f4ece4;--sub:#b3a69b;--chip:#3a332c;--shadow:0 4px 14px rgba(0,0,0,.4)}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;padding-bottom:env(safe-area-inset-bottom)}
+header{padding:14px 16px 4px;display:flex;justify-content:space-between;align-items:center}
+h1{margin:0;font-size:22px}
+h2.sec{margin:18px 16px 8px;font-size:16px;color:var(--sub)}
+#gear{border:0;background:var(--chip);color:var(--ink);width:44px;height:44px;border-radius:50%;font-size:20px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 16px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:0;background:var(--chip);color:var(--ink);font-size:16px;padding:10px 16px;border-radius:999px;min-height:44px}
+.chip.on{background:var(--accent);color:#fff;font-weight:700}
+/* 방송 시작 */
+#onair{display:block;width:calc(100% - 32px);margin:12px 16px 0;border:0;border-radius:24px;background:linear-gradient(135deg,#ff8a5b,#ffb347);color:#fff;font-size:24px;font-weight:800;padding:22px;box-shadow:var(--shadow)}
+#onair small{display:block;font-size:13px;font-weight:500;opacity:.9;margin-top:4px}
+/* 프로그램(채널) 버튼 */
+#progs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;padding:0 16px}
+.prog{border:0;border-radius:22px;padding:18px 10px;color:#fff;font-size:18px;font-weight:700;box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center;gap:6px}
+.prog .e{font-size:38px}
+.prog small{font-size:12px;font-weight:500;opacity:.9}
+.prog.off{opacity:.4}
+/* 다시보기 */
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;padding:0 16px 24px}
+.card{background:var(--card);border:0;border-radius:20px;box-shadow:var(--shadow);overflow:hidden;text-align:left;padding:0;color:inherit;font:inherit}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#ddd}
+.card .t{padding:10px 14px 14px;font-size:15px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card .c{display:block;font-size:12px;color:var(--sub);margin-top:4px}
+.pager{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.pager button{border:0;background:var(--chip);color:var(--ink);font-size:16px;min-width:48px;min-height:48px;padding:0 16px;border-radius:999px}
+.pager button.on{background:var(--accent);color:#fff;font-weight:700}
+.pager button:disabled{opacity:.35}
+#fileWarn{display:none;margin:10px 16px 0;padding:14px;border-radius:16px;background:#ffd9d4;color:#5a1d14;font-size:14px;line-height:1.5}
+.empty,.foot{text-align:center;color:var(--sub);padding:20px 16px;font-size:13px}
+/* 플레이어 */
+#player{position:fixed;inset:0;background:#000;z-index:20;display:none;flex-direction:column}
+#player.open{display:flex}
+#player .bar{display:flex;gap:8px;align-items:center;padding:10px 14px;padding-top:calc(10px + env(safe-area-inset-top));color:#fff}
+#player .bar button{border:0;background:#ffffff26;color:#fff;font-size:17px;padding:12px 18px;border-radius:999px;min-height:48px}
+#now{flex:1;font-size:15px;font-weight:700;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#left{font-size:12px;font-weight:400;display:block;opacity:.8}
+#frame{flex:1;min-height:0;position:relative}
+#frame iframe,#yt{width:100%;height:100%;border:0}
+#shield{position:absolute;inset:0;z-index:2;background:transparent;touch-action:none}
+#ctl{display:flex;justify-content:center;gap:12px;padding:12px;padding-bottom:calc(12px + env(safe-area-inset-bottom))}
+#ctl button{border:0;background:#ffffff26;color:#fff;font-size:22px;padding:14px 32px;border-radius:999px;min-height:56px}
+#close{position:relative;overflow:hidden}
+#close i{position:absolute;left:0;top:0;bottom:0;width:0;background:#ffffff40}
+/* 모달 */
+.modal{position:fixed;inset:0;background:#000a;z-index:30;display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.box{background:var(--card);color:var(--ink);border-radius:22px;padding:22px;max-width:360px;width:100%;text-align:center}
+.box h2{margin:0 0 10px;font-size:20px}
+.box p{color:var(--sub);font-size:14px;margin:6px 0 14px}
+.box input,.box select{font-size:20px;padding:12px;border-radius:12px;border:2px solid var(--chip);background:var(--bg);color:var(--ink);width:100%;text-align:center;margin-bottom:12px}
+.box button{border:0;background:var(--accent);color:#fff;font-size:18px;padding:14px;border-radius:14px;width:100%;margin-top:4px}
+.box button.g{background:var(--chip);color:var(--ink)}
+</style>
+</head>
+<body>
+<header><h1>🐥 아기 TV유치원</h1><span style="display:flex;gap:8px"><a href="roadmap.html" style="display:inline-flex;align-items:center;height:44px;padding:0 14px;border-radius:999px;background:var(--chip);color:var(--ink);text-decoration:none;font-size:14px">📚 추천 채널</a><button id="gear" aria-label="부모 설정">⚙️</button></span></header>
+<div id="fileWarn"><b>⚠️ 영상이 재생되지 않아요 (오류 153)</b><br>파일을 직접 열면 유튜브가 막아요. 같은 폴더의 <b>start.bat</b>을 더블클릭해서 열린 주소(http://localhost:8080/)로 들어와 주세요.</div>
+<div class="chips" id="age"></div>
+
+<button id="onair">📺 TV유치원 시작!<small>영어 → 노래 → 숫자 → 탐험 → 이야기 → 우리말 순서로 계속 나와요</small></button>
+
+<h2 class="sec">보고 싶은 시간을 골라요</h2>
+<div id="progs"></div>
+
+<h2 class="sec" id="recap">다시보기</h2>
+<div id="grid"></div>
+<div class="foot" id="foot"></div>
+
+<div id="player">
+  <div class="bar"><button id="close"><i></i>← 그만 (꾹)</button><div id="now"></div><button id="skip">다음 ▶</button></div>
+  <div id="frame"><div id="yt"></div><div id="shield"></div></div>
+  <div id="ctl"><button id="pp">⏸ 잠깐 멈춤</button></div>
+</div>
+
+<div class="modal" id="gate"><div class="box">
+  <h2>부모 확인</h2><p id="q"></p>
+  <input id="ans" type="number" inputmode="numeric" autocomplete="off">
+  <button id="gok">확인</button><button class="g" id="gno">취소</button>
+</div></div>
+
+<div class="modal" id="settings"><div class="box">
+  <h2>부모 설정</h2>
+  <p>한 번에 볼 수 있는 시간</p>
+  <select id="limit"><option value="0">제한 없음</option><option value="10">10분</option><option value="15">15분</option><option value="20">20분</option><option value="30">30분</option></select>
+  <button id="sok">저장</button><button class="g" id="sno">닫기</button>
+</div></div>
+
+<div class="modal" id="timeup"><div class="box">
+  <h2>🌙 오늘은 여기까지!</h2><p>시간이 다 되었어요. 이제 다른 놀이를 해볼까요?</p>
+  <button id="tok">확인</button>
+</div></div>
+
+<script src="videos.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+const $=s=>document.querySelector(s);
+// 방송 시간표(프로그램). 순서가 곧 '오늘의 방송' 순서입니다.
+const PROGS=[
+  {k:'english',n:'영어 시간',e:'🔤',c:'#4f8ef7'},
+  {k:'song',   n:'노래 시간',e:'🎵',c:'#f2a33a'},
+  {k:'math',   n:'숫자 시간',e:'🔢',c:'#3fb27f'},
+  {k:'know',   n:'탐험 시간',e:'🔭',c:'#1f8a9b'},
+  {k:'story',  n:'이야기 시간',e:'📖',c:'#9b6dd6'},
+  {k:'ko',     n:'우리말 시간',e:'🐦',c:'#e8706d'}
+];
+// 연령: 만 N세 → 로드맵 20칸(만2~6세 × 4분기) 중 (N-2)*4 ~ (N-2)*4+3
+const AGES={all:'전체 연령',2:'만 2세',3:'만 3세',4:'만 4세',5:'만 5세',6:'만 6세'};
+const PER=30;let page=0;  // 한 페이지 최대 30개
+let age='all',timer=null,remain=0,queue=[],qi=0,player=null,apiReady=false,pendingStart=false,label='';
+const store={get(k,d){try{return localStorage.getItem(k)??d}catch{return d}},set(k,v){try{localStorage.setItem(k,v)}catch{}}};
+const data=window.KIDS_DATA||{videos:[]};
+
+// 프로그램은 채널의 분류(channels.json)를 그대로 씁니다.
+data.videos.forEach(v=>v.prog=PROGS.some(p=>p.k==v.category)?v.category:'song');
+// 다시보기 목록: 한 채널에 쏠리지 않게 채널별 최신순 순번대로 번갈아 배치
+{const seen={};data.videos.forEach(v=>v.rk=(seen[v.channel]=(seen[v.channel]??-1)+1));data.videos.sort((a,b)=>a.rk-b.rk)}
+const live=v=>/🔴|live/i.test(v.title);
+const fits=v=>age=='all'||(v.s<=(age-2)*4+3&&v.e>=(age-2)*4);
+const pool=()=>data.videos.filter(v=>!live(v)&&fits(v));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+
+function render(){
+  const ac=$('#age');ac.innerHTML='';
+  for(const k in AGES){const b=document.createElement('button');b.className='chip'+(k==age?' on':'');b.textContent=AGES[k];b.onclick=()=>{age=k;page=0;render()};ac.appendChild(b)}
+  const list=pool(),pr=$('#progs');pr.innerHTML='';
+  for(const p of PROGS){
+    const n=list.filter(v=>v.prog==p.k).length;
+    const b=document.createElement('button');b.className='prog'+(n?'':' off');b.style.background=p.c;
+    b.innerHTML=`<span class="e">${p.e}</span>${p.n}<small>${n?n+'개':'준비 중'}</small>`;
+    if(n)b.onclick=()=>start(shuffle(list.filter(v=>v.prog==p.k)),p.n);
+    pr.appendChild(b);
+  }
+  const g=$('#grid');g.innerHTML='';
+  if(!list.length)g.innerHTML='<div class="empty">영상이 없어요</div>';
+  const pages=Math.max(1,Math.ceil(list.length/PER));if(page>=pages)page=pages-1;
+  for(const v of list.slice(page*PER,(page+1)*PER)){
+    const b=document.createElement('button');b.className='card';
+    b.innerHTML=`<img loading="lazy" alt="" src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg"><div class="t"></div>`;
+    const t=b.querySelector('.t');t.textContent=v.title;
+    const c=document.createElement('span');c.className='c';c.textContent=v.channel;t.appendChild(c);
+    b.onclick=()=>start([v,...shuffle(list.filter(x=>x.prog==v.prog&&x.id!=v.id))],PROGS.find(p=>p.k==v.prog).n);
+    g.appendChild(b);
+  }
+  if(pages>1){
+    const pg=document.createElement('div');pg.className='pager';
+    const mk=(t,p,dis,on)=>{const b=document.createElement('button');b.textContent=t;b.disabled=dis;if(on)b.className='on';b.onclick=()=>{page=p;render();$('#recap').scrollIntoView()};pg.appendChild(b)};
+    mk('◀ 이전',page-1,page===0);
+    for(let i=0;i<pages;i++)mk(String(i+1),i,false,i===page);
+    mk('다음 ▶',page+1,page===pages-1);
+    g.appendChild(pg);
+  }
+  $('#foot').textContent=data.updated?`영상 목록 업데이트: ${data.updated}`:'';
+}
+
+// '오늘의 방송': 프로그램을 돌아가며 한 편씩
+$('#onair').onclick=()=>{
+  const list=pool(),by=PROGS.map(p=>({n:p.n,a:shuffle(list.filter(v=>v.prog==p.k))})).filter(x=>x.a.length);
+  const q=[];let more=true;
+  for(let r=0;more;r++){more=false;for(const x of by)if(x.a[r]){q.push({...x.a[r],show:x.n});more=true}}
+  start(q,'')
+};
+
+function start(q,name){
+  if(!q.length)return;
+  queue=q.map(v=>({...v,show:v.show||name}));qi=0;
+  const lim=+store.get('limit',0);
+  if(lim&&remain<=0)remain=lim*60;
+  $('#player').classList.add('open');
+  clearInterval(timer);
+  if(lim)timer=setInterval(tick,1000);
+  playCur();
+}
+function playCur(){
+  const v=queue[qi];if(!v)return stop();
+  $('#now').innerHTML='';
+  $('#now').append(`📺 ${v.show}`);
+  const sp=document.createElement('span');sp.id='left';$('#now').appendChild(sp);showLeft();
+  if(!apiReady){pendingStart=true;return}
+  if(player)player.loadVideoById(v.id);
+  else player=new YT.Player('yt',{host:'https://www.youtube-nocookie.com',videoId:v.id,
+    playerVars:{autoplay:1,rel:0,playsinline:1,modestbranding:1,controls:0,disablekb:1,fs:0,iv_load_policy:3,origin:location.origin},
+    events:{onReady:e=>e.target.playVideo(),onStateChange:e=>{if(e.data===0)next();if(e.data===1)$('#pp').textContent='⏸ 잠깐 멈춤';if(e.data===2)$('#pp').textContent='▶ 다시 보기'},onError:()=>next()}});
+}
+function next(){qi++;if(qi>=queue.length){stop();return}playCur()}
+function onYouTubeIframeAPIReady(){apiReady=true;if(pendingStart){pendingStart=false;playCur()}}
+function showLeft(){const s=$('#left');if(!s)return;if(+store.get('limit',0)){const m=Math.floor(remain/60);s.textContent=`남은 시간 ${m}:${String(remain%60).padStart(2,'0')}`}}
+function tick(){remain--;showLeft();if(remain<=0){stop();$('#timeup').classList.add('open')}}
+function stop(){clearInterval(timer);try{player&&player.stopVideo()}catch{}$('#player').classList.remove('open')}
+// '그만'은 1초 꾹 눌러야 종료(아이가 실수로 못 나가게)
+{const b=$('#close'),bar=b.querySelector('i');let h=null;
+ const down=e=>{e.preventDefault();bar.style.transition='width 1s linear';bar.style.width='100%';h=setTimeout(()=>{h=null;bar.style.transition='none';bar.style.width='0';stop()},1000)};
+ const up=()=>{clearTimeout(h);bar.style.transition='none';bar.style.width='0'};
+ b.addEventListener('pointerdown',down);['pointerup','pointerleave','pointercancel'].forEach(t=>b.addEventListener(t,up));}
+$('#skip').onclick=next;
+$('#pp').onclick=()=>{try{player.getPlayerState()===1?player.pauseVideo():player.playVideo()}catch{}};
+$('#tok').onclick=()=>{$('#timeup').classList.remove('open');remain=0};
+
+// 부모 확인(곱셈 문제) → 설정
+let ansv=0;
+$('#gear').onclick=()=>{const a=3+Math.floor(Math.random()*7),b=4+Math.floor(Math.random()*6);ansv=a*b;$('#q').textContent=`${a} × ${b} = ?`;$('#ans').value='';$('#gate').classList.add('open')};
+$('#gno').onclick=()=>$('#gate').classList.remove('open');
+$('#gok').onclick=()=>{if(+$('#ans').value===ansv){$('#gate').classList.remove('open');$('#limit').value=store.get('limit',0);$('#settings').classList.add('open')}else{$('#ans').value='';$('#ans').focus()}};
+$('#sok').onclick=()=>{store.set('limit',$('#limit').value);remain=0;$('#settings').classList.remove('open')};
+$('#sno').onclick=()=>$('#settings').classList.remove('open');
+render();
+if(location.protocol==='file:')$('#fileWarn').style.display='block';
+// 새 영상 반영: 자정 업데이트(서버가 videos.js 를 새로 만듦)를 감지하면 재생 중이 아닐 때 새로고침
+if(location.protocol!=='file:')setInterval(async()=>{
+  if($('#player').classList.contains('open'))return;
+  try{
+    const t=await (await fetch('videos.js?'+Date.now(),{cache:'no-store'})).text();
+    const m=t.match(/"updated":\s*"([^"]+)"/);
+    if(m&&m[1]!==data.updated)location.reload();
+  }catch{}
+},300000);
+</script>
+</body>
+</html>
