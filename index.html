@@ -49,6 +49,9 @@ h2.sec{margin:18px 16px 8px;font-size:16px;color:var(--sub)}
 #frame{flex:1;min-height:0;position:relative}
 #frame iframe,#yt{width:100%;height:100%;border:0}
 #shield{position:absolute;inset:0;z-index:2;background:transparent;touch-action:none}
+#bigplay{position:absolute;inset:0;z-index:3;display:none;align-items:center;justify-content:center;flex-direction:column;gap:10px;width:100%;background:#000b;border:0;color:#fff;font-size:72px}
+#bigplay span{font-size:20px;font-weight:700}
+#bigplay.show{display:flex}
 #ctl{display:flex;justify-content:center;gap:12px;padding:12px;padding-bottom:calc(12px + env(safe-area-inset-bottom))}
 #ctl button{border:0;background:#ffffff26;color:#fff;font-size:22px;padding:14px 32px;border-radius:999px;min-height:56px}
 #close{position:relative;overflow:hidden}
@@ -80,7 +83,7 @@ h2.sec{margin:18px 16px 8px;font-size:16px;color:var(--sub)}
 
 <div id="player">
   <div class="bar"><button id="close"><i></i>← 그만 (꾹)</button><div id="now"></div><button id="skip">다음 ▶</button></div>
-  <div id="frame"><div id="yt"></div><div id="shield"></div></div>
+  <div id="frame"><div id="yt"></div><div id="shield"></div><button id="bigplay" aria-label="재생">▶<span>눌러서 재생</span></button></div>
   <div id="ctl"><button id="pp">⏸ 잠깐 멈춤</button></div>
 </div>
 
@@ -187,17 +190,29 @@ function playCur(){
   $('#now').innerHTML='';
   $('#now').append(`📺 ${v.show}`);
   const sp=document.createElement('span');sp.id='left';$('#now').appendChild(sp);showLeft();
+  armBig();
   if(!apiReady){pendingStart=true;return}
   if(player)player.loadVideoById(v.id);
   else player=new YT.Player('yt',{host:'https://www.youtube-nocookie.com',videoId:v.id,
     playerVars:{autoplay:1,rel:0,playsinline:1,modestbranding:1,controls:0,disablekb:1,fs:0,iv_load_policy:3,origin:location.origin},
-    events:{onReady:e=>e.target.playVideo(),onStateChange:e=>{if(e.data===0)next();if(e.data===1)$('#pp').textContent='⏸ 잠깐 멈춤';if(e.data===2)$('#pp').textContent='▶ 다시 보기'},onError:()=>next()}});
+    events:{onReady:e=>e.target.playVideo(),onStateChange:e=>{if(e.data===0)next();if(e.data===1){$('#pp').textContent='⏸ 잠깐 멈춤';$('#bigplay').classList.remove('show')}if(e.data===2)$('#pp').textContent='▶ 다시 보기'},onError:()=>next()}});
 }
+// 폰은 자동 재생을 막는 경우가 있어, 2.5초 안에 재생이 안 되면 '눌러서 재생' 버튼을 보여줍니다.
+let bt=null;
+function armBig(){
+  clearTimeout(bt);$('#bigplay').classList.remove('show');
+  bt=setTimeout(()=>{let st=-1;try{st=player.getPlayerState()}catch{}if(st!==1)$('#bigplay').classList.add('show')},2500);
+}
+$('#bigplay').onclick=()=>{
+  $('#bigplay').classList.remove('show');
+  try{player.playVideo()}catch{}
+  armBig();
+};
 function next(){qi++;if(qi>=queue.length){stop();return}playCur()}
 function onYouTubeIframeAPIReady(){apiReady=true;if(pendingStart){pendingStart=false;playCur()}}
 function showLeft(){const s=$('#left');if(!s)return;if(+store.get('limit',0)){const m=Math.floor(remain/60);s.textContent=`남은 시간 ${m}:${String(remain%60).padStart(2,'0')}`}}
 function tick(){remain--;showLeft();if(remain<=0){stop();$('#timeup').classList.add('open')}}
-function stop(){clearInterval(timer);try{player&&player.stopVideo()}catch{}$('#player').classList.remove('open')}
+function stop(){clearInterval(timer);clearTimeout(bt);$('#bigplay').classList.remove('show');try{player&&player.stopVideo()}catch{}$('#player').classList.remove('open')}
 // '그만'은 1초 꾹 눌러야 종료(아이가 실수로 못 나가게)
 {const b=$('#close'),bar=b.querySelector('i');let h=null;
  const down=e=>{e.preventDefault();bar.style.transition='width 1s linear';bar.style.width='100%';h=setTimeout(()=>{h=null;bar.style.transition='none';bar.style.width='0';stop()},1000)};
