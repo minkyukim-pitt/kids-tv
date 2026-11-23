@@ -48,7 +48,8 @@ h2.sec{margin:18px 16px 8px;font-size:16px;color:var(--sub)}
 #left{font-size:12px;font-weight:400;display:block;opacity:.8}
 #frame{flex:1;min-height:0;position:relative}
 #frame iframe,#yt{width:100%;height:100%;border:0}
-#shield{position:absolute;inset:0;z-index:2;background:transparent;touch-action:none}
+/* 투명 막은 맨 위 제목줄(유튜브로 나가는 링크)만 덮습니다. 나머지는 열어 둬서 광고 '건너뛰기' 버튼이 눌려요. */
+#shield{position:absolute;left:0;right:0;top:0;height:18%;z-index:2;background:transparent;touch-action:none}
 #bigplay{position:absolute;inset:0;z-index:3;display:none;align-items:center;justify-content:center;flex-direction:column;gap:10px;width:100%;background:#000b;border:0;color:#fff;font-size:72px}
 #bigplay span{font-size:20px;font-weight:700}
 #bigplay.show{display:flex}
@@ -72,7 +73,7 @@ h2.sec{margin:18px 16px 8px;font-size:16px;color:var(--sub)}
 <div id="fileWarn"><b>⚠️ 영상이 재생되지 않아요 (오류 153)</b><br>파일을 직접 열면 유튜브가 막아요. 같은 폴더의 <b>start.bat</b>을 더블클릭해서 열린 주소(http://localhost:8080/)로 들어와 주세요.</div>
 <div class="chips" id="age"></div>
 
-<button id="onair">📺 TV유치원 시작!<small>영어 → 노래 → 숫자 → 탐험 → 이야기 → 우리말 순서로 계속 나와요</small></button>
+<button id="onair">📺 TV유치원 시작!<small>영어 → 한글 → 노래 → 숫자 → 탐험 → 이야기 → 우리말 순서로 계속 나와요</small></button>
 
 <h2 class="sec">보고 싶은 시간을 골라요</h2>
 <div id="progs"></div>
@@ -112,6 +113,7 @@ const $=s=>document.querySelector(s);
 // 방송 시간표(프로그램). 순서가 곧 '오늘의 방송' 순서입니다.
 const PROGS=[
   {k:'english',n:'영어 시간',e:'🔤',c:'#4f8ef7'},
+  {k:'hangul', n:'한글 시간',e:'🅖',c:'#d4577a'},
   {k:'song',   n:'노래 시간',e:'🎵',c:'#f2a33a'},
   {k:'math',   n:'숫자 시간',e:'🔢',c:'#3fb27f'},
   {k:'know',   n:'탐험 시간',e:'🔭',c:'#1f8a9b'},
