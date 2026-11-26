@@ -1,6 +1,267 @@
 window.KIDS_DATA = {
-  "updated": "2026-11-26 00:53",
+  "updated": "2026-11-27 00:51",
   "videos": [
+    {
+      "id": "Mzo2slNVHzw",
+      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-26T15:11:45+00:00"
+    },
+    {
+      "id": "FAAh7Snn_og",
+      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-26T15:11:43+00:00"
+    },
+    {
+      "id": "-3AsLwDYFKs",
+      "title": "Top 20 Kids Christmas Songs | 🎁🎄🎅 Happy Holidays from Super Simple Songs!",
+      "channel": "Super Simple Songs",
+      "category": "song",
+      "s": 0,
+      "e": 9,
+      "published": "2026-11-26T15:00:37+00:00"
+    },
+    {
+      "id": "JvHRteiufRk",
+      "title": "Geroge Hunts for the Shadow Monster 🐵 Curious George 🐵 Kids Cartoon 🐵 Kids Movies",
+      "channel": "Curious George",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-26T15:00:34+00:00"
+    },
+    {
+      "id": "TK4HF_bQRVA",
+      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-26T14:52:43+00:00"
+    },
+    {
+      "id": "ucJERgtTBJw",
+      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-26T14:52:34+00:00"
+    },
+    {
+      "id": "v6NXyo1WXUo",
+      "title": "Peppa Pig Celebrates THANKSGIVING! 🥧 Aunt Dottie Visits From America 🍽️ BRAND NEW Stories | 3 Hours",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-26T14:15:08+00:00"
+    },
+    {
+      "id": "d2jZw86WtH0",
+      "title": "Merry Christmas from Peppa Pig! ❄️ Cosy Winter Stories | Kids Cartoons | 4K",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-26T12:42:05+00:00"
+    },
+    {
+      "id": "ar0yK0HE3QA",
+      "title": "🔴 LIVE: Baby Evie’s Sweetest Playtime Moments 🍼 | Peppa Pig Big Sister Stories ✨ | 4K",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-26T12:30:24+00:00"
+    },
+    {
+      "id": "i1c5QgPo-Aw",
+      "title": "🔴 LIVE: Peppa Pig & Baby Evie's FIRST Christmas! 🎄 Family Winter Holidays | Kids Cartoon | 4K",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-26T12:10:47+00:00"
+    },
+    {
+      "id": "gIISQTLj3C0",
+      "title": "🔴 LIVE: Peppa & Baby Evie’s Most Adorable Playtime Ever! 🍼 Kids Cartoons ✨",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-26T12:09:59+00:00"
+    },
+    {
+      "id": "PoYhJfcVfMk",
+      "title": "Quacky Flappy Music from Sarah & Duck + More Songs for Kids! 🎶✨",
+      "channel": "Sarah & Duck",
+      "category": "story",
+      "s": 5,
+      "e": 11,
+      "published": "2026-11-26T12:00:18+00:00"
+    },
+    {
+      "id": "38GsL-5VdKU",
+      "title": "How to Bake a Pumpkin Pie | Learn to Count for Kids Compilation | Number Cartoon | Numberblocks",
+      "channel": "Numberblocks",
+      "category": "math",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-26T12:00:07+00:00"
+    },
+    {
+      "id": "bPPOPW1ctsE",
+      "title": "6 HOURS 🔴 Unicorse Brushes his Teeth with Bluey & Bingo 🦷 💜 | Bluey",
+      "channel": "Bluey",
+      "category": "story",
+      "s": 16,
+      "e": 19,
+      "published": "2026-11-26T11:47:30+00:00"
+    },
+    {
+      "id": "y9gQidSwJAs",
+      "title": "4 HOURS of Games! 🔴 | ﻿Bluey and Bingo PLAY with a Yoga Ball! 😄 🎾 | Bluey",
+      "channel": "Bluey",
+      "category": "story",
+      "s": 16,
+      "e": 19,
+      "published": "2026-11-26T11:10:49+00:00"
+    },
+    {
+      "id": "pNf1_Im0OHU",
+      "title": "Blippi's Fun Science Slime Experiments 🧪",
+      "channel": "Blippi",
+      "category": "english",
+      "s": 6,
+      "e": 15,
+      "published": "2026-11-26T11:00:38+00:00"
+    },
+    {
+      "id": "WCwYSR_Qxrk",
+      "title": "Giant Beach Shell & Forest Leaf Art! | Natural Art | Full Episode S3 E4 | Colourblocks",
+      "channel": "Colourblocks",
+      "category": "know",
+      "s": 7,
+      "e": 11,
+      "published": "2026-11-26T10:00:29+00:00"
+    },
+    {
+      "id": "auAcsvBCIN0",
+      "title": "Are We There Yet? | Family Road Trip | CoComelon Nursery Rhymes & Kids Songs",
+      "channel": "Cocomelon",
+      "category": "song",
+      "s": 0,
+      "e": 19,
+      "published": "2026-11-26T08:00:10+00:00"
+    },
+    {
+      "id": "9KkVjSiBoQg",
+      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-26T07:15:36+00:00"
+    },
+    {
+      "id": "7ukg9H4NP5I",
+      "title": "🔴 Story Time with Pinkfong | Find the Tail, Santa's Beard & More | @Pinkfong LIVE",
+      "channel": "Pinkfong (Baby Shark)",
+      "category": "song",
+      "s": 0,
+      "e": 19,
+      "published": "2026-11-26T04:56:48+00:00"
+    },
+    {
+      "id": "pWshTtkDmYA",
+      "title": "🔴 Sing Along with Baby Shark | Winter Songs & Baby Shark Dance | @Pinkfong LIVE",
+      "channel": "Pinkfong (Baby Shark)",
+      "category": "song",
+      "s": 0,
+      "e": 19,
+      "published": "2026-11-26T04:50:51+00:00"
+    },
+    {
+      "id": "p4KkFkN7R34",
+      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-26T03:21:47+00:00"
+    },
+    {
+      "id": "9zuzQ-X-ACE",
+      "title": "Christmas with Peppa Pig & Baby Evie! 🎄 Snowy Family Fun | Kids Cartoons | 4K",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-26T02:49:22+00:00"
+    },
+    {
+      "id": "Z6TtPK5IuXw",
+      "title": "🔴 LIVE: Peppa Pig & Baby Evie's Funniest Moments! 🍼 | Big Sister Fun ✨ | Kids Cartoons | 4K",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-26T00:35:13+00:00"
+    },
+    {
+      "id": "YXauLrLAMaE",
+      "title": "Letter R | Get Ready, Get Set, Let's Learn About the Alphabet! | Jack Hartmann",
+      "channel": "Jack Hartmann",
+      "category": "english",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-26T00:00:16+00:00"
+    },
+    {
+      "id": "Wb1OjB7c0f4",
+      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-25T23:17:48+00:00"
+    },
+    {
+      "id": "TfgoLvkRk4g",
+      "title": "Amazing Shark Adventures 🦈 1 Hour of Octonauts 🐬 Kids & Toddler Cartoons",
+      "channel": "Octonauts",
+      "category": "know",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-25T22:00:31+00:00"
+    },
+    {
+      "id": "HbP4MT61PeY",
+      "title": "Baby Evie’s Happy Holidays! 🎁 Christmas Cuddles with Peppa Pig | Kids Cartoons | 4K",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-25T16:39:22+00:00"
+    },
+    {
+      "id": "gWb2HshluCw",
+      "title": "1 HOUR 🎊 | Bluey Games at Nana's ☺️ 💙 | Charades + MORE 🩰 | Bluey",
+      "channel": "Bluey",
+      "category": "story",
+      "s": 16,
+      "e": 19,
+      "published": "2026-11-25T16:00:06+00:00"
+    },
     {
       "id": "PlmLyO3tvFA",
       "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
@@ -27,24 +288,6 @@ window.KIDS_DATA = {
       "s": 12,
       "e": 17,
       "published": "2026-11-25T15:00:33+00:00"
-    },
-    {
-      "id": "Wb1OjB7c0f4",
-      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-25T14:57:07+00:00"
-    },
-    {
-      "id": "p4KkFkN7R34",
-      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-25T14:56:12+00:00"
     },
     {
       "id": "6AxW7kxOcIY",
@@ -99,15 +342,6 @@ window.KIDS_DATA = {
       "s": 8,
       "e": 15,
       "published": "2026-11-25T12:32:57+00:00"
-    },
-    {
-      "id": "Z6TtPK5IuXw",
-      "title": "🔴 LIVE: Peppa Pig & Baby Evie's Funniest Moments! 🍼 | Big Sister Fun ✨ | Kids Cartoons | 4K",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-25T12:09:58+00:00"
     },
     {
       "id": "LbXabsU3ufc",
@@ -180,15 +414,6 @@ window.KIDS_DATA = {
       "s": 8,
       "e": 15,
       "published": "2026-11-25T06:33:13+00:00"
-    },
-    {
-      "id": "HbP4MT61PeY",
-      "title": "🔴 LIVE: Peppa Pig Christmas Minisodes! 🎄 Holiday Specials in 4K | Kids Cartoons",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-25T06:09:36+00:00"
     },
     {
       "id": "8LXNyTkODy4",
@@ -353,15 +578,6 @@ window.KIDS_DATA = {
       "published": "2026-11-24T13:00:27+00:00"
     },
     {
-      "id": "KHLqkZezbYI",
-      "title": "🔴 LIVE: Baby Evie’s Sweetest Playtime Moments 🍼 | Peppa Pig Big Sister Stories ✨ | 4K",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-24T12:32:15+00:00"
-    },
-    {
       "id": "S2S-u9V0Ux8",
       "title": "Meet Dramatic Dark Red & Mix Dark Shades! | Dark Red's Show | Full Episode S3 E2 | Colourblocks",
       "channel": "Colourblocks",
@@ -389,15 +605,6 @@ window.KIDS_DATA = {
       "published": "2026-11-24T11:00:08+00:00"
     },
     {
-      "id": "M0FhFertZlw",
-      "title": "Peppa Pig’s Big Christmas Surprises! 🎁 Holiday Joy with Baby Evie | Kids Cartoons | 4K",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-24T10:39:06+00:00"
-    },
-    {
       "id": "K14Xy6Ntd7w",
       "title": "Happy & You Know It | JJ & Boba’s Snow Day Fun! ⛄| CoComelon Nursery Rhymes & Kids Songs",
       "channel": "Cocomelon",
@@ -417,39 +624,12 @@ window.KIDS_DATA = {
     },
     {
       "id": "X023CSY30Yk",
-      "title": "Octonauts 🐙 Swashbuckling Swordfish 🏴‍☠️ Season 2 Full Episode ⚓ Cartoons for Kids",
+      "title": "Octonauts 🏴‍☠️ Swashbuckling Swordfish ⚔️ Season 2 Full Episode 🐙 Cartoons for Kids",
       "channel": "Octonauts",
       "category": "know",
       "s": 12,
       "e": 17,
       "published": "2026-11-24T04:51:19+00:00"
-    },
-    {
-      "id": "9-c14xDJBCA",
-      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-24T03:31:01+00:00"
-    },
-    {
-      "id": "aKLVqdjIhdg",
-      "title": "🔴 LIVE: Baby Evie's Cutest Giggle Marathon 🍼 | Peppa’s Big Sister Adventures ✨ | 4K",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-24T00:37:19+00:00"
-    },
-    {
-      "id": "8ukMQ4hrzq4",
-      "title": "Peppa Pig & Baby Evie’s Cosy Festive Treats! 🍰 Christmas Family Fun | Kids Cartoons | 4K",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-24T00:33:49+00:00"
     },
     {
       "id": "Gtc1gR4Ux44",
@@ -461,15 +641,6 @@ window.KIDS_DATA = {
       "published": "2026-11-24T00:00:34+00:00"
     },
     {
-      "id": "N87gfnaGqSU",
-      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-23T23:16:16+00:00"
-    },
-    {
       "id": "O2RPFZBwWq0",
       "title": "2 HOURS 🚘 | Bluey and Bingo on the Road Trip! ☺️ | Bluey",
       "channel": "Bluey",
@@ -477,24 +648,6 @@ window.KIDS_DATA = {
       "s": 16,
       "e": 19,
       "published": "2026-11-23T16:00:17+00:00"
-    },
-    {
-      "id": "iVjreAlAk2s",
-      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-23T15:21:07+00:00"
-    },
-    {
-      "id": "tFGkqfiUHrI",
-      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-23T15:08:30+00:00"
     },
     {
       "id": "xMKmOG8WYOw",
@@ -506,22 +659,13 @@ window.KIDS_DATA = {
       "published": "2026-11-23T15:00:13+00:00"
     },
     {
-      "id": "TILU7N87lr4",
-      "title": "Peppa Pig’s Merry Christmas Stories! ❄️ Festive Fun in English | Kids Cartoons | 4K",
-      "channel": "Peppa Pig",
+      "id": "_f4Z-Iduuc8",
+      "title": "🔴 LIVE: 😴 Bedtime with Pocoyo! Sleepy Stories & Sweet Dreams 🌙 | Pocoyo English",
+      "channel": "Pocoyo",
       "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-23T14:33:00+00:00"
-    },
-    {
-      "id": "eETjNYcJZZg",
-      "title": "🔴 LIVE: Baby Evie’s Sweetest Playtime Moments 🍼 | Peppa Pig Big Sister Stories ✨ | 4K",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-23T12:39:29+00:00"
+      "s": 4,
+      "e": 10,
+      "published": "2026-11-23T13:02:19+00:00"
     },
     {
       "id": "97ayVTlpkno",
@@ -540,15 +684,6 @@ window.KIDS_DATA = {
       "s": 0,
       "e": 19,
       "published": "2026-11-23T10:08:20+00:00"
-    },
-    {
-      "id": "zhLSHn34_28",
-      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-23T07:19:21+00:00"
     },
     {
       "id": "RbnflFkdH1o",
@@ -1037,15 +1172,6 @@ window.KIDS_DATA = {
       "published": "2026-11-17T23:00:17+00:00"
     },
     {
-      "id": "_4eU_RG_MVU",
-      "title": "4 HOURS 🔴 Bluey and Chloe Get Past the Terriers 😯 | Adventure Role Playing Game at School | Bluey",
-      "channel": "Bluey",
-      "category": "story",
-      "s": 16,
-      "e": 19,
-      "published": "2026-11-17T21:12:10+00:00"
-    },
-    {
       "id": "5JQm7qbzA0M",
       "title": "George Lends A Helping Hand 🐵 Curious George 🐵 Kids Cartoon 🐵 Kids Movies",
       "channel": "Curious George",
@@ -1116,24 +1242,6 @@ window.KIDS_DATA = {
       "s": 12,
       "e": 17,
       "published": "2026-11-16T22:00:03+00:00"
-    },
-    {
-      "id": "6uc64zyo-tk",
-      "title": "2 HOURS 🔴 Let's Play a Circus Game 🎪 | Honey Pretends to be a LION! 🦁 | Bluey",
-      "channel": "Bluey",
-      "category": "story",
-      "s": 16,
-      "e": 19,
-      "published": "2026-11-16T19:06:12+00:00"
-    },
-    {
-      "id": "-yTVRvNMaPQ",
-      "title": "2 HOURS of Playtime | Bluey, Bingo and Judo play in the DIRT! 🛝🌳 | ﻿Bluey",
-      "channel": "Bluey",
-      "category": "story",
-      "s": 16,
-      "e": 19,
-      "published": "2026-11-16T16:00:33+00:00"
     },
     {
       "id": "vNWUQUaQXjU",
@@ -1334,15 +1442,6 @@ window.KIDS_DATA = {
       "published": "2026-11-13T16:00:30+00:00"
     },
     {
-      "id": "6sWiLTVbr1o",
-      "title": "George's Guide To Staying Healthy 🐵 Curious George 🐵 Kids Cartoon 🐵 Kids Movies",
-      "channel": "Curious George",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-13T15:00:21+00:00"
-    },
-    {
       "id": "BmIzDPRb1EM",
       "title": "Caillou the Chef | Caillou | Cartoons For Kids",
       "channel": "Caillou",
@@ -1451,15 +1550,6 @@ window.KIDS_DATA = {
       "published": "2026-11-12T13:00:27+00:00"
     },
     {
-      "id": "i8HP2Btj7kk",
-      "title": "Super Duper Counting Games with the Numberblocks | Learn to Count for Kids | Numberblocks",
-      "channel": "Numberblocks",
-      "category": "math",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-12T11:00:35+00:00"
-    },
-    {
       "id": "jxFolET80B4",
       "title": "Blippi’s Ultimate Vehicle Race on Land, Air & Sea! 🏎️",
       "channel": "Blippi",
@@ -1476,33 +1566,6 @@ window.KIDS_DATA = {
       "s": 0,
       "e": 19,
       "published": "2026-11-12T08:00:22+00:00"
-    },
-    {
-      "id": "fyWzfNqro7U",
-      "title": "🎅🔴 LIVE! 24 Hours of Best of Winter Baby Shark Dance | 2026 Christmas Special | @Pinkfong LIVE",
-      "channel": "Pinkfong (Baby Shark)",
-      "category": "song",
-      "s": 0,
-      "e": 19,
-      "published": "2026-11-12T04:24:26+00:00"
-    },
-    {
-      "id": "2BnElG1NaN0",
-      "title": "🎁🔴 LIVE! Baby Shark’s 12 Days of Christmas & More | 24 Hours of Holiday Nursery Rhyme",
-      "channel": "Pinkfong (Baby Shark)",
-      "category": "song",
-      "s": 0,
-      "e": 19,
-      "published": "2026-11-12T04:17:19+00:00"
-    },
-    {
-      "id": "BltGPUU5OG0",
-      "title": "Octonauts 🦜 Amazon Adventure 🌳 Season 3 Special Full Episode",
-      "channel": "Octonauts",
-      "category": "know",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-12T00:24:12+00:00"
     },
     {
       "id": "8pkHGhHIpRo",
@@ -1548,15 +1611,6 @@ window.KIDS_DATA = {
       "s": 8,
       "e": 13,
       "published": "2026-11-10T14:00:16+00:00"
-    },
-    {
-      "id": "4kiijF8yvco",
-      "title": "Letter F | Get Ready, Get Set, Let's Learn About the Alphabet! | Jack Hartmann",
-      "channel": "Jack Hartmann",
-      "category": "english",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-10T00:00:25+00:00"
     },
     {
       "id": "o3R8QKnJhZg",
@@ -1748,15 +1802,6 @@ window.KIDS_DATA = {
       "published": "2026-11-01T12:00:15+00:00"
     },
     {
-      "id": "uunn-0IVQsM",
-      "title": "Grey Skies with Colourblock Grey | Kids Learn Colours Compilation | Colourblocks",
-      "channel": "Colourblocks",
-      "category": "know",
-      "s": 7,
-      "e": 11,
-      "published": "2026-11-01T12:00:12+00:00"
-    },
-    {
       "id": "edu_8x8N5nc",
       "title": "Arty's Guide to Creative Thinking | Coding Cartoon Compilation for Kids | Wonderblocks",
       "channel": "Wonderblocks",
@@ -1802,15 +1847,6 @@ window.KIDS_DATA = {
       "published": "2026-10-31T12:00:10+00:00"
     },
     {
-      "id": "fN2robocYmQ",
-      "title": "Happy Halloween! 👻🎃🧛 + More Sarah & Duck Cartoons for Kids",
-      "channel": "Sarah & Duck",
-      "category": "story",
-      "s": 5,
-      "e": 11,
-      "published": "2026-10-31T11:00:08+00:00"
-    },
-    {
       "id": "XN6OiXLO1to",
       "title": "Best Baby Songs with Ms Rachel - Nursery Rhymes for Babies - Open Shut Them + More",
       "channel": "Ms. Rachel",
@@ -1827,15 +1863,6 @@ window.KIDS_DATA = {
       "s": 4,
       "e": 10,
       "published": "2026-10-30T13:00:15+00:00"
-    },
-    {
-      "id": "Xlddubk54eM",
-      "title": "Alphablocks Not-So-Scary Halloween Party | Learn to Read and Spell for Kids | Alphablocks",
-      "channel": "Alphablocks",
-      "category": "english",
-      "s": 10,
-      "e": 19,
-      "published": "2026-10-30T12:00:07+00:00"
     },
     {
       "id": "_5qtsA25HRI",
@@ -1872,15 +1899,6 @@ window.KIDS_DATA = {
       "s": 4,
       "e": 10,
       "published": "2026-10-27T11:32:23+00:00"
-    },
-    {
-      "id": "AKhvh7AesoI",
-      "title": "👾 ESCAPE the EVIL Alien! Pocoyo's HAUNTED Chase! | POCOYO ENGLISH | Cartoons for Kids",
-      "channel": "Pocoyo",
-      "category": "story",
-      "s": 4,
-      "e": 10,
-      "published": "2026-10-26T13:00:02+00:00"
     },
     {
       "id": "JSj0BtOLqc4",
@@ -2214,15 +2232,6 @@ window.KIDS_DATA = {
       "s": 9,
       "e": 15,
       "published": "2026-07-30T23:21:39+00:00"
-    },
-    {
-      "id": "-HOQGg7uuQQ",
-      "title": "Counting Up To 20 | Sea Animals Kids Math Song with @NoodleAndPals | Super Simple Songs",
-      "channel": "Super Simple Songs",
-      "category": "song",
-      "s": 0,
-      "e": 9,
-      "published": "2026-07-30T14:00:21+00:00"
     },
     {
       "id": "9TpBgOpALFQ",
