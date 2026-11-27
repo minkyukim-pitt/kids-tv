@@ -1,6 +1,348 @@
 window.KIDS_DATA = {
-  "updated": "2026-11-27 00:51",
+  "updated": "2026-11-28 00:49",
   "videos": [
+    {
+      "id": "8V3BGmlI6zY",
+      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T15:41:00+00:00"
+    },
+    {
+      "id": "-taUiYKWRHo",
+      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T15:14:01+00:00"
+    },
+    {
+      "id": "RBOCdEWQLXM",
+      "title": "Ultimate Monkey Playdate Chaos 🐵 Curious George 🐵 Kids Cartoon 🐵 Kids Movies",
+      "channel": "Curious George",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T15:00:02+00:00"
+    },
+    {
+      "id": "sN2tjM_sM0k",
+      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T14:58:18+00:00"
+    },
+    {
+      "id": "L6CTOYSQpXQ",
+      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T14:58:06+00:00"
+    },
+    {
+      "id": "kcALidR7ukk",
+      "title": "Caillou the Soccer Player | Caillou",
+      "channel": "Caillou",
+      "category": "story",
+      "s": 8,
+      "e": 13,
+      "published": "2026-11-27T14:00:09+00:00"
+    },
+    {
+      "id": "NMU4rZK9l_g",
+      "title": "👑 Pocoyo Went from NOOB to KING of Grow a Garden! | Pocoyo English | Cartoons for Kids",
+      "channel": "Pocoyo",
+      "category": "story",
+      "s": 4,
+      "e": 10,
+      "published": "2026-11-27T13:00:07+00:00"
+    },
+    {
+      "id": "qrl2aEzFxnE",
+      "title": "🔴 LIVE: Baby Evie’s Very First Big Sister Adventures with Peppa! 🍼✨ | Kids Cartoons",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-27T12:38:13+00:00"
+    },
+    {
+      "id": "B5fMfzor2tk",
+      "title": "🔴 LIVE: Baby Evie’s Sweetest Playtime Moments 🍼 | Peppa Pig Big Sister Stories ✨ | 4K",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-27T12:16:45+00:00"
+    },
+    {
+      "id": "JHapKlCIeDM",
+      "title": "Foody Feasts in Alphaland | Learn to Read and Spell for Kids Compilation | Alphablocks",
+      "channel": "Alphablocks",
+      "category": "english",
+      "s": 10,
+      "e": 19,
+      "published": "2026-11-27T12:00:29+00:00"
+    },
+    {
+      "id": "7F6OXfK9A3Q",
+      "title": "Numberblock 2 Versus the Snakes | Learn to Count for Kids Compilation  | Numberblocks",
+      "channel": "Numberblocks",
+      "category": "math",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-27T11:00:17+00:00"
+    },
+    {
+      "id": "DanyAt7NLyA",
+      "title": "2 HOURS of Play 🔴 | ﻿Bluey Takes on the Obstacle Course! 🫨 💙 | ﻿Bluey",
+      "channel": "Bluey",
+      "category": "story",
+      "s": 16,
+      "e": 19,
+      "published": "2026-11-27T10:24:16+00:00"
+    },
+    {
+      "id": "wAWZ-mauiUM",
+      "title": "Peppa Pig Tales 2026 ❄️ Peppa's FROZEN Family Car! | Winter Blizzard🧊Brand New Minisodes",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-27T10:00:27+00:00"
+    },
+    {
+      "id": "1EOzFcza0qQ",
+      "title": "Spring, Summer, Autumn & Winter Song! | Colours of the Seasons | Full Episode S3 E5 | Colourblocks",
+      "channel": "Colourblocks",
+      "category": "know",
+      "s": 7,
+      "e": 11,
+      "published": "2026-11-27T10:00:19+00:00"
+    },
+    {
+      "id": "X5R_S6EHnk0",
+      "title": "엄마 까투리 | S4 | 하루 종일 숲속 친구들과 놀아요! | 전체 이야기 이어보기 | 모아보기 연속보기❤️",
+      "channel": "엄마 까투리",
+      "category": "ko",
+      "s": 0,
+      "e": 19,
+      "published": "2026-11-27T09:12:50+00:00"
+    },
+    {
+      "id": "5WC0ZHPug6Y",
+      "title": "엄마 까투리 | S4 | 하루 종일 숲속 친구들과 놀아요! | 전체 이야기 이어보기 | 모아보기 연속보기❤️",
+      "channel": "엄마 까투리",
+      "category": "ko",
+      "s": 0,
+      "e": 19,
+      "published": "2026-11-27T08:59:33+00:00"
+    },
+    {
+      "id": "SrDGQBN53R0",
+      "title": "Peppa Pig’s Winter Holiday Adventures! ❄️ Snowy Christmas Fun | Kids Cartoons | 4K",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-27T08:42:45+00:00"
+    },
+    {
+      "id": "MLvI4z_2l-M",
+      "title": "Full Episodes of Sarah and Duck",
+      "channel": "Sarah & Duck",
+      "category": "story",
+      "s": 5,
+      "e": 11,
+      "published": "2026-11-27T08:38:23+00:00"
+    },
+    {
+      "id": "8qdO-_SpM4k",
+      "title": "LIVE 🔴 Octonauts 🍂 Fall Fun in the Sea 🌪️🌊 Educational Full Episodes for Kids",
+      "channel": "Octonauts",
+      "category": "know",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T08:24:48+00:00"
+    },
+    {
+      "id": "Wn3UlT9zQK0",
+      "title": "🔴 LIVE: Santa Visits Peppa Pig & Baby Evie! 🎄 Winter Adventures | Kids Cartoons | 4K",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-27T08:17:10+00:00"
+    },
+    {
+      "id": "PZs73lRRh1w",
+      "title": "엄마 까투리 | Best | 천방지축 꼬마 | 베스트 에피소드 모음",
+      "channel": "엄마 까투리",
+      "category": "ko",
+      "s": 0,
+      "e": 19,
+      "published": "2026-11-27T08:00:09+00:00"
+    },
+    {
+      "id": "98CMghb7Oss",
+      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T07:12:36+00:00"
+    },
+    {
+      "id": "5BI34FlKrOc",
+      "title": "[한글떼 시즌2 노래] 룰루랄라 에프엠 리을라디, 오! | 시즌2 노래 전곡듣기 | Hangul Buddies",
+      "channel": "한글떼",
+      "category": "hangul",
+      "s": 8,
+      "e": 19,
+      "published": "2026-11-27T07:00:36+00:00"
+    },
+    {
+      "id": "ucJERgtTBJw",
+      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T03:20:39+00:00"
+    },
+    {
+      "id": "gIISQTLj3C0",
+      "title": "🔴 LIVE: Peppa & Baby Evie’s Most Adorable Playtime Ever! 🍼 Kids Cartoons ✨",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-27T00:34:55+00:00"
+    },
+    {
+      "id": "SiyS75J62mY",
+      "title": "🔴 LIVE Curious George Episodes 🐵 Plumber George To The Rescue! 🛠️🛁  + MORE Episode Clips! 🐵",
+      "channel": "Curious George",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T00:18:07+00:00"
+    },
+    {
+      "id": "RuEm9iMn9A0",
+      "title": "🔴 LIVE Curious George Episodes 🐵 George Makes Shadows In The Dark 🔦⭐️ + MORE!",
+      "channel": "Curious George",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T00:13:26+00:00"
+    },
+    {
+      "id": "MCk9ClS8_EI",
+      "title": "🔴 LIVE Curious George Episodes 🐵 George Visits The Dentist + More! 🐵",
+      "channel": "Curious George",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T00:09:25+00:00"
+    },
+    {
+      "id": "4Ai4BlOZR5w",
+      "title": "🔴 LIVE Curious George Episodes 🐵 George Visits The Farm + More Clips! 🐓🐵",
+      "channel": "Curious George",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-27T00:04:29+00:00"
+    },
+    {
+      "id": "rHGeGcjsUng",
+      "title": "Letter S | Get Ready, Get Set, Let's Learn About the Alphabet! | Jack Hartmann",
+      "channel": "Jack Hartmann",
+      "category": "english",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-27T00:00:05+00:00"
+    },
+    {
+      "id": "TK4HF_bQRVA",
+      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
+      "channel": "Ben & Holly's Little Kingdom",
+      "category": "story",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-26T23:17:06+00:00"
+    },
+    {
+      "id": "bPPOPW1ctsE",
+      "title": "6 HOURS 🔴 Unicorse Brushes his Teeth with Bluey & Bingo 🦷 💜 | Bluey",
+      "channel": "Bluey",
+      "category": "story",
+      "s": 16,
+      "e": 19,
+      "published": "2026-11-26T23:12:08+00:00"
+    },
+    {
+      "id": "lBk_JIWTfFA",
+      "title": "[🐱NEW] Ninimo Is Very Hungry | Latin Pop Song for Kids | Pinkfong Official",
+      "channel": "Pinkfong (Baby Shark)",
+      "category": "song",
+      "s": 0,
+      "e": 19,
+      "published": "2026-11-26T23:00:00+00:00"
+    },
+    {
+      "id": "i1c5QgPo-Aw",
+      "title": "Baby Evie’s Magical Winter Wonderland! ❄️ Christmas Adventures with Peppa Pig | Kids Cartoons | 4K",
+      "channel": "Peppa Pig",
+      "category": "story",
+      "s": 8,
+      "e": 15,
+      "published": "2026-11-26T22:25:41+00:00"
+    },
+    {
+      "id": "pWshTtkDmYA",
+      "title": "🔴 Sing Along with Baby Shark | Winter Songs & Baby Shark Dance | @Pinkfong LIVE",
+      "channel": "Pinkfong (Baby Shark)",
+      "category": "song",
+      "s": 0,
+      "e": 19,
+      "published": "2026-11-26T20:06:13+00:00"
+    },
+    {
+      "id": "7ukg9H4NP5I",
+      "title": "🔴 Story Time with Pinkfong | Find the Tail, Santa's Beard & More | @Pinkfong LIVE",
+      "channel": "Pinkfong (Baby Shark)",
+      "category": "song",
+      "s": 0,
+      "e": 19,
+      "published": "2026-11-26T20:04:26+00:00"
+    },
+    {
+      "id": "EuTmVnABgNg",
+      "title": "Daniel is Thankful for Family! @DanielTigersNeighbourhood",
+      "channel": "Daniel Tiger's Neighborhood",
+      "category": "story",
+      "s": 7,
+      "e": 13,
+      "published": "2026-11-26T17:30:16+00:00"
+    },
+    {
+      "id": "_f4Z-Iduuc8",
+      "title": "🔴 LIVE: 😴 Bedtime with Pocoyo! Sleepy Stories & Sweet Dreams 🌙 | Pocoyo English",
+      "channel": "Pocoyo",
+      "category": "story",
+      "s": 4,
+      "e": 10,
+      "published": "2026-11-26T16:52:57+00:00"
+    },
     {
       "id": "Mzo2slNVHzw",
       "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
@@ -38,24 +380,6 @@ window.KIDS_DATA = {
       "published": "2026-11-26T15:00:34+00:00"
     },
     {
-      "id": "TK4HF_bQRVA",
-      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-26T14:52:43+00:00"
-    },
-    {
-      "id": "ucJERgtTBJw",
-      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-26T14:52:34+00:00"
-    },
-    {
       "id": "v6NXyo1WXUo",
       "title": "Peppa Pig Celebrates THANKSGIVING! 🥧 Aunt Dottie Visits From America 🍽️ BRAND NEW Stories | 3 Hours",
       "channel": "Peppa Pig",
@@ -83,24 +407,6 @@ window.KIDS_DATA = {
       "published": "2026-11-26T12:30:24+00:00"
     },
     {
-      "id": "i1c5QgPo-Aw",
-      "title": "🔴 LIVE: Peppa Pig & Baby Evie's FIRST Christmas! 🎄 Family Winter Holidays | Kids Cartoon | 4K",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-26T12:10:47+00:00"
-    },
-    {
-      "id": "gIISQTLj3C0",
-      "title": "🔴 LIVE: Peppa & Baby Evie’s Most Adorable Playtime Ever! 🍼 Kids Cartoons ✨",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-26T12:09:59+00:00"
-    },
-    {
       "id": "PoYhJfcVfMk",
       "title": "Quacky Flappy Music from Sarah & Duck + More Songs for Kids! 🎶✨",
       "channel": "Sarah & Duck",
@@ -117,15 +423,6 @@ window.KIDS_DATA = {
       "s": 8,
       "e": 15,
       "published": "2026-11-26T12:00:07+00:00"
-    },
-    {
-      "id": "bPPOPW1ctsE",
-      "title": "6 HOURS 🔴 Unicorse Brushes his Teeth with Bluey & Bingo 🦷 💜 | Bluey",
-      "channel": "Bluey",
-      "category": "story",
-      "s": 16,
-      "e": 19,
-      "published": "2026-11-26T11:47:30+00:00"
     },
     {
       "id": "y9gQidSwJAs",
@@ -171,24 +468,6 @@ window.KIDS_DATA = {
       "s": 12,
       "e": 17,
       "published": "2026-11-26T07:15:36+00:00"
-    },
-    {
-      "id": "7ukg9H4NP5I",
-      "title": "🔴 Story Time with Pinkfong | Find the Tail, Santa's Beard & More | @Pinkfong LIVE",
-      "channel": "Pinkfong (Baby Shark)",
-      "category": "song",
-      "s": 0,
-      "e": 19,
-      "published": "2026-11-26T04:56:48+00:00"
-    },
-    {
-      "id": "pWshTtkDmYA",
-      "title": "🔴 Sing Along with Baby Shark | Winter Songs & Baby Shark Dance | @Pinkfong LIVE",
-      "channel": "Pinkfong (Baby Shark)",
-      "category": "song",
-      "s": 0,
-      "e": 19,
-      "published": "2026-11-26T04:50:51+00:00"
     },
     {
       "id": "p4KkFkN7R34",
@@ -243,6 +522,15 @@ window.KIDS_DATA = {
       "s": 12,
       "e": 17,
       "published": "2026-11-25T22:00:31+00:00"
+    },
+    {
+      "id": "vve8KKgPt60",
+      "title": "LIVE 🔴 Octonauts 🐙 The Ultimate Ocean Adventure 🌊 24/7 Livestream 🐙 Full Episodes for Kids",
+      "channel": "Octonauts",
+      "category": "know",
+      "s": 12,
+      "e": 17,
+      "published": "2026-11-25T20:55:34+00:00"
     },
     {
       "id": "HbP4MT61PeY",
@@ -389,15 +677,6 @@ window.KIDS_DATA = {
       "published": "2026-11-25T09:46:53+00:00"
     },
     {
-      "id": "X5R_S6EHnk0",
-      "title": "엄마 까투리 | S4 | 하루 종일 숲속 친구들과 놀아요! | 전체 이야기 이어보기 | 모아보기 연속보기❤️",
-      "channel": "엄마 까투리",
-      "category": "ko",
-      "s": 0,
-      "e": 19,
-      "published": "2026-11-25T09:30:49+00:00"
-    },
-    {
       "id": "AQmSF_z8nvg",
       "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
       "channel": "Ben & Holly's Little Kingdom",
@@ -405,33 +684,6 @@ window.KIDS_DATA = {
       "s": 12,
       "e": 17,
       "published": "2026-11-25T07:17:07+00:00"
-    },
-    {
-      "id": "t2DLV9YNIDk",
-      "title": "Peppa Pig’s Big Christmas Surprises! 🎁 Holiday Joy with Baby Evie | Kids Cartoons | 4K",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-25T06:33:13+00:00"
-    },
-    {
-      "id": "8LXNyTkODy4",
-      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-25T03:22:05+00:00"
-    },
-    {
-      "id": "dvw58RXyicM",
-      "title": "🔴 LIVE: Peppa & Baby Evie’s Most Adorable Playtime Ever! 🍼 Kids Cartoons ✨",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-25T00:52:53+00:00"
     },
     {
       "id": "GKS0zoSL3Z4",
@@ -452,15 +704,6 @@ window.KIDS_DATA = {
       "published": "2026-11-25T00:00:24+00:00"
     },
     {
-      "id": "yEVj3YUW5H0",
-      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-24T23:09:01+00:00"
-    },
-    {
       "id": "LWSiddw_xGs",
       "title": "Where Did My Beard Go? 🎅 | Find Santa's Beard | Pinkfong Christmas",
       "channel": "Pinkfong (Baby Shark)",
@@ -477,15 +720,6 @@ window.KIDS_DATA = {
       "s": 16,
       "e": 19,
       "published": "2026-11-24T21:06:43+00:00"
-    },
-    {
-      "id": "oPiXcLVFeIk",
-      "title": "Merry Christmas from Peppa Pig! ❄️ Cosy Winter Stories | Kids Cartoons | 4K",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-24T20:26:45+00:00"
     },
     {
       "id": "ElXdwIicLV8",
@@ -515,24 +749,6 @@ window.KIDS_DATA = {
       "published": "2026-11-24T15:30:20+00:00"
     },
     {
-      "id": "_2JElvBGSCc",
-      "title": "🔴 LIVE! Ben and Holly's Little Kingdom Full Episodes ✨ Kids Cartoons - SEASON 2 🔴",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-24T15:12:38+00:00"
-    },
-    {
-      "id": "GWG-zHKpPr0",
-      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-24T15:07:10+00:00"
-    },
-    {
       "id": "oz0AXmmBUgM",
       "title": "Tree Climbing Secrets From George 🐵 Curious George 🐵 Kids Cartoon 🐵 Kids Movies",
       "channel": "Curious George",
@@ -540,24 +756,6 @@ window.KIDS_DATA = {
       "s": 12,
       "e": 17,
       "published": "2026-11-24T15:00:25+00:00"
-    },
-    {
-      "id": "Su7cCi984mU",
-      "title": "Peppa Pig’s Merry Christmas Stories! ❄️ Festive Fun in English | Kids Cartoons | 4K",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-24T14:35:38+00:00"
-    },
-    {
-      "id": "NWB5FMX9Wu4",
-      "title": "Peppa Pig’s BROKEN Arm X-Ray! 🎄 Christmas Day at the Hospital | BRAND NEW Stories | 20 Minutes",
-      "channel": "Peppa Pig",
-      "category": "story",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-24T14:15:37+00:00"
     },
     {
       "id": "HhAAIPQsYKc",
@@ -614,15 +812,6 @@ window.KIDS_DATA = {
       "published": "2026-11-24T08:00:32+00:00"
     },
     {
-      "id": "TQO5ZyTyfJc",
-      "title": "🔴 LIVE: Peppa Pig’s BEST Adventures with Baby Evie! 🍼 | BRAND NEW Peppa Pig Minisodes ✨",
-      "channel": "Ben & Holly's Little Kingdom",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-24T07:15:48+00:00"
-    },
-    {
       "id": "X023CSY30Yk",
       "title": "Octonauts 🏴‍☠️ Swashbuckling Swordfish ⚔️ Season 2 Full Episode 🐙 Cartoons for Kids",
       "channel": "Octonauts",
@@ -657,15 +846,6 @@ window.KIDS_DATA = {
       "s": 12,
       "e": 17,
       "published": "2026-11-23T15:00:13+00:00"
-    },
-    {
-      "id": "_f4Z-Iduuc8",
-      "title": "🔴 LIVE: 😴 Bedtime with Pocoyo! Sleepy Stories & Sweet Dreams 🌙 | Pocoyo English",
-      "channel": "Pocoyo",
-      "category": "story",
-      "s": 4,
-      "e": 10,
-      "published": "2026-11-23T13:02:19+00:00"
     },
     {
       "id": "97ayVTlpkno",
@@ -902,15 +1082,6 @@ window.KIDS_DATA = {
       "published": "2026-11-20T23:45:30+00:00"
     },
     {
-      "id": "BsrJ_vrgYJs",
-      "title": "5 HOURS of Fun 🔴 | Bluey Is Playing in the Rain! ☺️ ☔️ | Bluey",
-      "channel": "Bluey",
-      "category": "story",
-      "s": 16,
-      "e": 19,
-      "published": "2026-11-20T22:10:47+00:00"
-    },
-    {
       "id": "7l5OrVT9UxA",
       "title": "How To Draw A Pizza Delivery Truck",
       "channel": "Art for Kids Hub",
@@ -1028,15 +1199,6 @@ window.KIDS_DATA = {
       "published": "2026-11-19T23:00:37+00:00"
     },
     {
-      "id": "cb1FyeWV8hQ",
-      "title": "LIVE 🔴 Octonauts 🍂 Fall Fun in the Sea 🌪️ 24/7 Livestream 🌊 Educational Full Episodes for Kids",
-      "channel": "Octonauts",
-      "category": "know",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-19T17:09:32+00:00"
-    },
-    {
       "id": "ADYpYw8nPYU",
       "title": "How To Draw A Pizza Delivery Turkey",
       "channel": "Art for Kids Hub",
@@ -1100,15 +1262,6 @@ window.KIDS_DATA = {
       "published": "2026-11-18T22:00:01+00:00"
     },
     {
-      "id": "Dffd5pxKRh8",
-      "title": "2 HOURS 🐉 ✍️ | Bluey, Bingo, Bandit, and Chilli Draw Their Own Adventure! 🔥 ✨ | Bluey",
-      "channel": "Bluey",
-      "category": "story",
-      "s": 16,
-      "e": 19,
-      "published": "2026-11-18T16:00:34+00:00"
-    },
-    {
       "id": "J1EmFaMyNaA",
       "title": "Our NEW 80-Piece Marker Set Is Here! 🎉",
       "channel": "Art for Kids Hub",
@@ -1145,15 +1298,6 @@ window.KIDS_DATA = {
       "published": "2026-11-18T13:00:45+00:00"
     },
     {
-      "id": "LduwkV_xlx4",
-      "title": "엄마 까투리 | S3 | 하루 종일 숲속 친구들과 놀아요! | 전체 이야기 이어보기 | 모아보기 연속보기❤️",
-      "channel": "엄마 까투리",
-      "category": "ko",
-      "s": 0,
-      "e": 19,
-      "published": "2026-11-18T10:14:48+00:00"
-    },
-    {
       "id": "bKuNcCmjUzk",
       "title": "Letter L | Get Ready, Get Set, Let's Learn About the Alphabet! | Jack Hartmann",
       "channel": "Jack Hartmann",
@@ -1170,15 +1314,6 @@ window.KIDS_DATA = {
       "s": 0,
       "e": 19,
       "published": "2026-11-17T23:00:17+00:00"
-    },
-    {
-      "id": "5JQm7qbzA0M",
-      "title": "George Lends A Helping Hand 🐵 Curious George 🐵 Kids Cartoon 🐵 Kids Movies",
-      "channel": "Curious George",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-17T15:00:03+00:00"
     },
     {
       "id": "UI4Z-rz-WZ4",
@@ -1244,24 +1379,6 @@ window.KIDS_DATA = {
       "published": "2026-11-16T22:00:03+00:00"
     },
     {
-      "id": "vNWUQUaQXjU",
-      "title": "Private Investigator George🕵️‍🧐l    🐵 Full Episodes | Curious George",
-      "channel": "Curious George",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-16T00:00:11+00:00"
-    },
-    {
-      "id": "O6fgKssz1QU",
-      "title": "Big Puddle Rescue Mission 🐵 Curious George 🐵 Kids Cartoon 🐵 Kids Movies",
-      "channel": "Curious George",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-15T15:00:09+00:00"
-    },
-    {
       "id": "Y5gRzjP12g8",
       "title": "Sheriff Caillou | Caillou | Cartoons For Kids",
       "channel": "Caillou",
@@ -1314,15 +1431,6 @@ window.KIDS_DATA = {
       "s": 0,
       "e": 19,
       "published": "2026-11-14T23:00:16+00:00"
-    },
-    {
-      "id": "-ls4CXavG3s",
-      "title": "The Great City Skate Chase 🐵 Full Episodes | Curious George",
-      "channel": "Curious George",
-      "category": "story",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-14T15:00:25+00:00"
     },
     {
       "id": "S1sl-8pxCxM",
@@ -1478,24 +1586,6 @@ window.KIDS_DATA = {
       "published": "2026-11-13T11:45:02+00:00"
     },
     {
-      "id": "hw7DpKZdDBg",
-      "title": "Space Adventures with Numberblock One | Learn to Count for Kids | Number Cartoon | Numberblocks",
-      "channel": "Numberblocks",
-      "category": "math",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-13T11:00:34+00:00"
-    },
-    {
-      "id": "zCKkvPliO7A",
-      "title": "LIVE 🔴 Octonauts 🐙 Adventures Beneath the Waves 🌊 Livestream 🐠 Full Episodes for Kids",
-      "channel": "Octonauts",
-      "category": "know",
-      "s": 12,
-      "e": 17,
-      "published": "2026-11-13T08:09:59+00:00"
-    },
-    {
       "id": "H5pZ8RQ5KkY",
       "title": "[한글떼 시즌2] 으으! 스르륵! 스르륵! 재미난 썰매놀이! | 모음떼 이야기 | 한글떼 | 제19화 | Hangul Buddies",
       "channel": "한글떼",
@@ -1521,15 +1611,6 @@ window.KIDS_DATA = {
       "s": 8,
       "e": 15,
       "published": "2026-11-13T00:00:19+00:00"
-    },
-    {
-      "id": "wsw3t0bKmgs",
-      "title": "[🚓NEW] The Super Rescue Team is Hurt | Hoi Poi Pinkfong Car Mechanic | Pinkfong Official",
-      "channel": "Pinkfong (Baby Shark)",
-      "category": "song",
-      "s": 0,
-      "e": 19,
-      "published": "2026-11-12T23:00:06+00:00"
     },
     {
       "id": "uRqUixWz7R0",
@@ -1559,15 +1640,6 @@ window.KIDS_DATA = {
       "published": "2026-11-12T11:00:03+00:00"
     },
     {
-      "id": "errlt2XtceI",
-      "title": "Tale of 3 Friends | World Children Day Special | CoComelon Nursery Rhymes & Kids Songs",
-      "channel": "Cocomelon",
-      "category": "song",
-      "s": 0,
-      "e": 19,
-      "published": "2026-11-12T08:00:22+00:00"
-    },
-    {
       "id": "8pkHGhHIpRo",
       "title": "Letter H | Get Ready, Get Set, Let's Learn About the Alphabet! | Jack Hartmann",
       "channel": "Jack Hartmann",
@@ -1584,15 +1656,6 @@ window.KIDS_DATA = {
       "s": 4,
       "e": 10,
       "published": "2026-11-11T13:00:22+00:00"
-    },
-    {
-      "id": "uY02GTUOwYM",
-      "title": "Letter G | Get Ready, Get Set, Let's Learn About the Alphabet! | Jack Hartmann",
-      "channel": "Jack Hartmann",
-      "category": "english",
-      "s": 8,
-      "e": 15,
-      "published": "2026-11-11T00:00:04+00:00"
     },
     {
       "id": "5jYyqfDI8Fo",
@@ -1685,15 +1748,6 @@ window.KIDS_DATA = {
       "published": "2026-11-07T11:45:10+00:00"
     },
     {
-      "id": "CR3nkjbDMcc",
-      "title": "[한글떼 공부방] ㅜ편 | 한글떼 | 시즌2 제18-1화 | Hangul Buddies",
-      "channel": "한글떼",
-      "category": "hangul",
-      "s": 8,
-      "e": 19,
-      "published": "2026-11-07T01:00:11+00:00"
-    },
-    {
       "id": "ZG9SqDe-_zM",
       "title": "Daniel Has BIG Emotions! | @DanielTigersNeighbourhood",
       "channel": "Daniel Tiger's Neighborhood",
@@ -1775,15 +1829,6 @@ window.KIDS_DATA = {
       "published": "2026-11-03T14:00:31+00:00"
     },
     {
-      "id": "OJo07arb350",
-      "title": "Sarah and Duck Go Stargazing | Kids Cartoon | Sarah & Duck Official",
-      "channel": "Sarah & Duck",
-      "category": "story",
-      "s": 5,
-      "e": 11,
-      "published": "2026-11-03T12:00:30+00:00"
-    },
-    {
       "id": "C9grOiVSmF8",
       "title": "Winter Wonder with the Wonderblocks!! ❄️🧊 | Learn to Code and Problem Solve with the Wonderblocks!",
       "channel": "Wonderblocks",
@@ -1820,15 +1865,6 @@ window.KIDS_DATA = {
       "published": "2026-11-01T12:00:00+00:00"
     },
     {
-      "id": "dn8OfGbNFYw",
-      "title": "Caillou at the Water Park | Caillou | Cartoons For Kids",
-      "channel": "Caillou",
-      "category": "story",
-      "s": 8,
-      "e": 13,
-      "published": "2026-10-31T12:00:36+00:00"
-    },
-    {
       "id": "Lo0lmf8omK4",
       "title": "Super Duper Halloween Coding | Spooky Coding Cartoon Compilation for Kids | Wonderblocks",
       "channel": "Wonderblocks",
@@ -1836,15 +1872,6 @@ window.KIDS_DATA = {
       "s": 11,
       "e": 17,
       "published": "2026-10-31T12:00:19+00:00"
-    },
-    {
-      "id": "0rm9UIGyjJU",
-      "title": "Boo - An Alphablocks Halloween Special | Halloween Cartoons - Learn to Read and Spell | Alphablocks",
-      "channel": "Alphablocks",
-      "category": "english",
-      "s": 10,
-      "e": 19,
-      "published": "2026-10-31T12:00:10+00:00"
     },
     {
       "id": "XN6OiXLO1to",
@@ -1883,15 +1910,6 @@ window.KIDS_DATA = {
       "published": "2026-10-28T13:45:38+00:00"
     },
     {
-      "id": "WntX6aiSgvs",
-      "title": "😱 Pocoyo Opens a MYSTERY BOX… What’s Inside?! | Season 5 | Pocoyo English | Cartoons for Kids",
-      "channel": "Pocoyo",
-      "category": "story",
-      "s": 4,
-      "e": 10,
-      "published": "2026-10-28T13:00:40+00:00"
-    },
-    {
       "id": "prx-iR9bTEg",
       "title": "🔴 LIVE: 🎉 Party with Pocoyo! Dance and watch the BEST of Season 5! | Pocoyo English | Cartoons",
       "channel": "Pocoyo",
@@ -1908,15 +1926,6 @@ window.KIDS_DATA = {
       "s": 11,
       "e": 17,
       "published": "2026-10-25T11:45:12+00:00"
-    },
-    {
-      "id": "mhDuJ8RlDd4",
-      "title": "Tinkering for Kids | Coding Cartoon Compilation for Kids | Wonderblocks",
-      "channel": "Wonderblocks",
-      "category": "know",
-      "s": 11,
-      "e": 17,
-      "published": "2026-10-24T10:45:35+00:00"
     },
     {
       "id": "Kx7q23v1pPo",
@@ -2034,15 +2043,6 @@ window.KIDS_DATA = {
       "s": 0,
       "e": 9,
       "published": "2026-09-24T14:00:32+00:00"
-    },
-    {
-      "id": "JibzTgZDjQQ",
-      "title": "Daniel's Halloween Costume! | Halloween for Kids | Daniel Tiger's Neighbourhood",
-      "channel": "Daniel Tiger's Neighborhood",
-      "category": "story",
-      "s": 7,
-      "e": 13,
-      "published": "2026-09-24T12:00:12+00:00"
     },
     {
       "id": "GzIObE7uR8Q",
